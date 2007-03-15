@@ -1,6 +1,6 @@
 ---
 name: String-Expand
-version: 0.02
+version: 0.03
 author:
   - 'Paul Evans E<lt>leonerd@leonerd.org.ukE<gt>'
 abstract: |-
@@ -9,8 +9,9 @@ abstract: |-
 license: perl
 build_requires:
   Test::Exception: 0
+  Test::More: 0
 provides:
   String::Expand:
     file: lib/String/Expand.pm
-    version: 0.02
+    version: 0.03
 generated_by: Module::Build version 0.26

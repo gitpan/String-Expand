@@ -1,7 +1,8 @@
 Build.PL
 lib/String/Expand.pm
+Makefile.PL
 MANIFEST			This list of files
+META.yml
 t/01use.t
 t/02string.t
 t/03strings.t
-META.yml
