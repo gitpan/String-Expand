@@ -1,13 +1,12 @@
 #  You may distribute under the terms of either the GNU General Public License
 #  or the Artistic License (the same terms as Perl itself)
 #
-#  (C) Paul Evans, 2006,2007 -- leonerd@leonerd.org.uk
+#  (C) Paul Evans, 2006,2007,2009 -- leonerd@leonerd.org.uk
 
 package String::Expand;
 
-our $VERSION = "0.03";
-
 use strict;
+use warnings;
 
 use Exporter;
 our @ISA = qw( Exporter );
@@ -17,6 +16,8 @@ our @EXPORT = qw(
 );
 
 use Carp;
+
+our $VERSION = '0.04';
 
 my $VARNAME_MATCH = qr/\$([A-Z_][A-Z0-9_]*|\{.*?\})/;
 
@@ -203,8 +204,8 @@ __END__
 
 L<String::Interpolate> - Wrapper for builtin the Perl interpolation engine
 
+=back
+
 =head1 AUTHOR
 
-Paul Evans E<lt>leonerd@leonerd.org.ukE<gt>
-
-=back
+Paul Evans <leonerd@leonerd.org.uk>
